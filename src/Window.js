@@ -50,7 +50,13 @@ const HeaderButtonAccentSquare = styled('div')(props => {
 
 
 const HeaderButtonContainer = styled('div')(props => {
-    const shared = { position: "relative" };
+    const shared = {
+        position: "relative",
+        "&:hover": {
+            transform: "scale(1.1)",
+            transition: "100ms ease-in"
+        }
+     };
     if (props.right) return { ...shared, right: "-4px" }
     return { ...shared, left: "4px" }
 })
@@ -99,10 +105,11 @@ const BodyBorderTwo = styled.div`
 const InnerBody = styled.div`
     background-color: #DEDEDE;
     border: ${borderSize}px solid black;
-    display: flex:
+    display: flex;
     flex-direction: column;
     flex-grow: 1;
     border-radius: ${borderRadius}px;
+    height: 100px
 `
 
 const InnerBodyBorderOuter = styled.div`
@@ -111,14 +118,42 @@ const InnerBodyBorderOuter = styled.div`
     flex-direction: column;
     flex-grow: 1;
     border-radius: ${borderRadius}px;
+    
 `
 
 const InnerBodyBorderInner = styled.div`
+/* RE_ENABLE THIS IF YOU WANT INNER WHITE BORDER */
     border: ${borderSize}px solid white;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     border-radius: ${borderRadius}px;
+    overflow: scroll;
+    height: 100%;
+
+    /* width */
+&::-webkit-scrollbar {
+  width: ${headerButtonSize + 10}px;
+  
+}
+
+/* Track */
+&::-webkit-scrollbar-track {
+  background: #AAAAAA;
+  border: 2px solid black;
+
+}
+
+/* Handle */
+&::-webkit-scrollbar-thumb {
+background: #9C9CFF;
+border: ${borderSize}px solid black;
+}
+
+/* Handle on hover */
+&::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 `
 
 const Lines = styled.div`
@@ -185,7 +220,35 @@ function Window(children) {
                 <InnerBodyBorderOuter>
                         <InnerBody>
                             <InnerBodyBorderInner>
-                                content
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
+                                <p>content</p>
                             </InnerBodyBorderInner>
                         </InnerBody>
                 </InnerBodyBorderOuter>
