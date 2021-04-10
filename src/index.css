@@ -5,9 +5,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* background-image: url("https://512pixels.net/downloads/os9-5k/Flower-Power.jpg"); */
+  background-image: url("https://www.insanelymac.com/uploads/monthly_11_2009/post-529442-1258786812.jpg");
+  background-size: cover;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  /* font-family: 'Apple Garamond Bold'; */
+}
+
+@font-face {
+  font-family: 'App';
+  src: local('AppleGaramond'), url('./fonts/AppleGaramond.ttf') format('truetype');
+}
+
+* {
+  font-family: 'App';
+  font-size: 19px;
 }
