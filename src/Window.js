@@ -75,8 +75,8 @@ function HeaderButton(right) {
 
 const Body = styled.div`
   border: ${borderSize}px solid black;
-  width: 500px;
-  height: 500px;
+  width: 700px;
+  height: 600px;
   position: absolute;
   left: 20px;
   top: 20px;
@@ -244,7 +244,7 @@ const ResizeSquareInnerBorder2 = styled.div`
     border-top: ${borderSize}px solid #999999;
 `
 
-function Window(children) {
+function Window({children}) {
   return (
     <Draggable>
       <Body>
@@ -255,42 +255,14 @@ function Window(children) {
           <Header>
             <HeaderButton></HeaderButton>
             <LineGroup></LineGroup>
-            <HeaderTitle>Header Test</HeaderTitle>
+            <HeaderTitle>Resume</HeaderTitle>
             <LineGroup></LineGroup>
             <HeaderButton></HeaderButton>
           </Header>
           <InnerBodyBorderOuter>
             <InnerBody>
               <InnerBodyBorderInner>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
-                <p>content</p>
+                  {children}
               </InnerBodyBorderInner>
             </InnerBody>
           </InnerBodyBorderOuter>
