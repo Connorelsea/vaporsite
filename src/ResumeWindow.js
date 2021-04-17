@@ -86,6 +86,7 @@ const HeaderContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
+    flex: 0 0 auto;
 `
 
 const Header1 = styled.div`

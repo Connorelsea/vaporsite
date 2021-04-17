@@ -126,6 +126,30 @@ const InnerBodyBorderInner = styled.div`
     overflow: scroll;
     height: 100%;
 
+    
+    & > {
+
+        // TODO: feed in height from window size
+        .scrolledge-vertical {
+            position: absolute;
+            height: 530px;
+            width: 2px;
+            background-color: black;
+            right: 38px;
+            top: 36px;
+            
+        }
+
+        .scrolledge-horizontal {
+            position: absolute;
+            width: 650px;
+            height: 2px;
+            background-color: black;
+            left: 16px;
+            bottom: 38px;
+        }
+    }
+
     /* width */
 &::-webkit-scrollbar {
   width: ${headerButtonSize + 10}px;
@@ -137,7 +161,7 @@ const InnerBodyBorderInner = styled.div`
 &::-webkit-scrollbar-track {
   background: #AAAAAA;
   border: 2px solid #888888;
-  outline: 2px solid black;
+  outline: 2px solid black !important;
 }
 
 
@@ -176,7 +200,7 @@ const Lines = styled.div`
 const Line = styled.div`
   height: ${borderSize}px;
   background-color: ${(props) => (props.white ? "white" : "#777777")};
-  width: ${(props) => (props.white ? "100%" : "99%")};
+  width: ${(props) => (props.white ? "100%" : "98%")};
 `;
 
 const Header = styled.div`
@@ -262,6 +286,8 @@ function Window({children}) {
           <InnerBodyBorderOuter>
             <InnerBody>
               <InnerBodyBorderInner>
+                  <div className="scrolledge-horizontal"></div>
+                  <div className="scrolledge-vertical"></div>
                   {children}
               </InnerBodyBorderInner>
             </InnerBody>
