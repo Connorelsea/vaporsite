@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <ResumeWindow></ResumeWindow>
-      <SkillsWindow></SkillsWindow>
+      {/* <SkillsWindow></SkillsWindow> */}
     </div>
   );
 }
