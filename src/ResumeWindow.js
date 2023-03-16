@@ -10,7 +10,7 @@ function ResumeWindow() {
                 <HeaderContainer>
                     <Header1>Connor Elsea</Header1>
                     <Header2>Software developer </Header2>
-                    <SubtleHeading>6+ years experience</SubtleHeading>
+                    <SubtleHeading>7 years experience</SubtleHeading>
                 </HeaderContainer>
 
                 <Header3>ABOUT ME</Header3>
