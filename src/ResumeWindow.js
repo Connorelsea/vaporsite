@@ -17,6 +17,14 @@ function ResumeWindow() {
                 <p>I am a software developer interesting in creating new things and helping people browse the web more easily. I am skilled in JavaScript, React, Node, SQL, GraphQL, and Java. I have created numerous web apps from scratch, both by myself and with the help of a team, facilitating their journey from idea, to infrastructure, to testing, to deployment.</p>
 
                 <Header3>WORK EXPERIENCE</Header3>
+                <Header4>PureCars, 2021-Present</Header4>
+                <List>
+                    <ListItem>Maintain and update multiple products in a service ecosystem, using React and JavaScript</ListItem>
+                    <ListItem>Architect, design, and implement multiple new product apps from the ground up, integrating with deployment and testing systems</ListItem>
+                    <ListItem>Build and improve shared infrastructure, creating complex and customizable components for company-wide use, and ensure integration with existing design system</ListItem>
+                    <ListItem>Analyze new feature requirements, design and prototype new features using React and Figma/Sketch, iterate on UX considering feedback from teams and customers</ListItem>
+                    <ListItem>Assist with company-wide documentation, technical interviews, and candidate evaluation</ListItem>
+                </List>
                 <Header4>Localmed & Dental Intelligence, 2018-2021</Header4>
                 <List>
                     <ListItem>Development of multiple dental management products using JavaScript, React, Angular, GraphQL</ListItem>
